@@ -42,9 +42,9 @@ public class Joc {
         {
             System.out.println(numeEchipa1+" - "+numeEchipa2+": Mingea se afla la coordonatele: "+"("+minge.getX()+","+minge.getY()+")");
             try {
-                minge.suteaza();
                 pozitiaVecheX=minge.getX();
                 pozitiaVecheY=minge.getY();
+                minge.suteaza();
             } catch (Out o) {
                 minge.setX(pozitiaVecheX);
                 minge.setY(pozitiaVecheY);
